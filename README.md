@@ -1,6 +1,6 @@
 # Hi, I'm Dvin
 
-Full-stack web developer with 5+ years of experience (starting from the age of 14) in JavaScript/TypeScript, React.js, Next.js, Node.js, Bun.js, and Linux. Skilled in building applications of any complexity and comfortable working with any framework. Currently studying Business Administration and learning low-level programming with C/C++.
+Full-stack web developer with 5+ years of experience (since the age of 14) in JavaScript/TypeScript, React.js, Next.js, Node.js, Bun.js, and Linux. Skilled in building applications of any complexity and comfortable working with any framework. Currently studying Business Administration and learning low-level programming with C/C++.
 
 ## Skills & Technologies
 
