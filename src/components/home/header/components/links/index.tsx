@@ -20,9 +20,9 @@ const Links: FC<LinkProps> = ({ navOpen }) => {
       }}
       direction="row"
     >
-      <Link name="work" navOpen={navOpen} scrollTo={1000} />
+      <Link name="aboutMe" navOpen={navOpen} scrollTo={770} />
       {/* <Link name="mySkills" navOpen={navOpen} scrollTo={} /> */}
-      <Link name="contact" navOpen={navOpen} scrollTo={1400} />
+      <Link name="contact" navOpen={navOpen} />
     </Stack>
   )
 }

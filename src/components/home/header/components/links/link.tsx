@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 import { LinkProps } from '.'
 import { useEffect, useState } from 'react'
 
-const Link: FC<LinkProps & { name: string; scrollTo: number }> = ({ name, navOpen, scrollTo }) => {
+const Link: FC<LinkProps & { name: string; scrollTo?: number }> = ({ name, navOpen, scrollTo }) => {
   const t = useTranslations('Header')
   const [mainEl, setMainEl] = useState<HTMLElement | null>(null)
 
@@ -14,16 +14,19 @@ const Link: FC<LinkProps & { name: string; scrollTo: number }> = ({ name, navOpe
   }, [])
 
   const scroll = () => {
-    const start = mainEl!.scrollTop!
+    if (!mainEl) return
+    const start = mainEl.scrollTop!
     const startTime = performance.now()
+    // Determine target scroll position
+    const target = typeof scrollTo === 'number' ? scrollTo : mainEl.scrollHeight - mainEl.clientHeight
 
     const animate = (time: number) => {
       const elapsed = time - startTime
       const duration = 1000 // ms
       const progress = Math.min(elapsed / duration, 1)
       const ease = 0.5 - Math.cos(progress * Math.PI) / 2
-      const current = start + (scrollTo - start) * ease
-      mainEl?.scrollTo(0, current)
+      const current = start + (target - start) * ease
+      mainEl.scrollTo(0, current)
       if (progress < 1) requestAnimationFrame(animate)
     }
 
