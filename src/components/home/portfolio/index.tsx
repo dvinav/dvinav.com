@@ -24,7 +24,7 @@ const PortfolioSection = () => {
         <Thumbnail anim={saasDash} label={t('saasDashboard')} mobileOffset={80} desktopOffset={30} />
         <Thumbnail anim={ecommerce} label={t('shoppingWebsite')} mobileOffset={120} desktopOffset={30} />
         <Thumbnail anim={chatApp} label={t('messenger')} mobileOffset={80} desktopOffset={90} />
-        <Thumbnail anim={blog} label={t('blog')} mobileOffset={120} desktopOffset={130} />
+        <Thumbnail anim={blog} label={t('blog')} mobileOffset={150} desktopOffset={130} />
       </Grid>
     </Stack>
   )
