@@ -27,7 +27,7 @@ const Contact = () => {
   const t = useTranslations('Contact')
 
   return (
-    <Stack spacing={4} mb={32}>
+    <Stack spacing={4} pb={24}>
       <Typography fontSize="1.8rem" textAlign="center">
         {t('title')}
       </Typography>

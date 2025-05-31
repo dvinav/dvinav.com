@@ -17,7 +17,7 @@ const Content = styled('div')(({ theme }) => {
   const { exiting } = useUI()
 
   return {
-    minHeight: 1200,
+    paddingBottom: 32,
     zIndex: 7,
     paddingTop: theme.spacing(8),
     background: theme.palette.primary.main,

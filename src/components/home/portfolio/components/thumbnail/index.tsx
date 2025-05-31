@@ -21,9 +21,10 @@ interface Props {
   anim: any
   label: any
   mobileOffset: number
+  desktopOffset: number
 }
 
-const Thumbnail: FC<Props> = ({ anim, label, mobileOffset }) => {
+const Thumbnail: FC<Props> = ({ anim, label, mobileOffset, desktopOffset }) => {
   const theme = useTheme()
   const lottieRef = useRef<LottieRefCurrentProps | null>(null)
   const mainRef = useRef<HTMLElement | null>(null)
@@ -43,7 +44,7 @@ const Thumbnail: FC<Props> = ({ anim, label, mobileOffset }) => {
     const handleScroll = () => {
       const rect = animContainer!.getBoundingClientRect()
       const scrollY = mainRef.current?.scrollTop || 0
-      const frame = Math.round(Math.abs((scrollY / rect.top) * 120)) - (isMobile ? mobileOffset : 30)
+      const frame = Math.round(Math.abs((scrollY / rect.top) * 120)) - (isMobile ? mobileOffset : desktopOffset)
       if (frame <= 120) lottieRef.current?.goToAndStop(frame, true)
     }
 

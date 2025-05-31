@@ -49,6 +49,7 @@ const Header = () => {
       const color = mixColors(theme.palette.secondary.main, theme.palette.primary.main, progress)
       meta?.setAttribute('content', color)
       if (headerEl) headerEl.style.background = color
+      document.body.style.background = color
     }
     0
     const handleScroll = () => {
