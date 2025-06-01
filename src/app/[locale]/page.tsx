@@ -2,7 +2,7 @@ import { Header, Hero, Intro, Content, PortfolioSection, Contact } from '@/compo
 import { themeColor } from '@/config/theme'
 import { setRequestLocale } from 'next-intl/server'
 import { use } from 'react'
-import { PageProps } from '../../../.next/types/app/[locale]/page'
+import Languages from '@/components/home/langs'
 
 export const generateStaticParams = () => [{ locale: 'en' }, { locale: 'fa' }]
 
@@ -14,7 +14,7 @@ export const viewport = {
   userScalable: false
 }
 
-interface Props extends PageProps {
+interface Props {
   params: Promise<Params>
 }
 
@@ -34,6 +34,7 @@ const Home: FC<Props> = ({ params }) => {
       <Content>
         <Intro />
         <PortfolioSection />
+        <Languages />
       </Content>
       <Contact />
     </>

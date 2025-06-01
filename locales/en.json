@@ -20,17 +20,17 @@
     "intro": "Hey, I'm Dvin Avanesian. I'm 21, a full stack developer and MBA student. Been writing code since I was 12 and still obsessed with it."
   },
   "PortfolioSection": {
-    "whatCanIBuild": "What Can I Build?",
+    "whatCanIBuild": "Stuff I Make",
     "saasDashboard": "SaaS Dashboards",
     "shoppingWebsite": "Ecommerce Websites",
     "messenger": "Chat Applications",
     "blog": "Blog Platforms"
   },
   "Contact": {
-    "title": "Where to Find Me"
+    "title": "Hit Me Up"
   },
   "WhatMatters": {
-    "title": "What Matters to Me?",
+    "title": "What Matters to Me",
     "uiDetails": "UI Details",
     "performance": "Performance",
     "security": "Security",
@@ -39,10 +39,10 @@
     "simplicity": "Simplicity"
   },
   "Languages": {
-    "title": "What Languages Do I Know?"
+    "title": "Code I Speak"
   },
   "Frameworks": {
-    "title": "What Frameworks Have I Worked With?"
+    "title": "Frameworks I Use"
   },
   "WhatElse": {
     "title": "What Else?"
