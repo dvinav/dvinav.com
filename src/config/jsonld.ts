@@ -30,7 +30,7 @@ const me: WithContext<Person> = {
   ],
   sameAs: [
     'https://github.com/dvinav',
-    'https://linkedin.com/in/dvin-avanesian-0b4565283',
+    'https://linkedin.com/in/dvinav',
     'https://t.me/dvinav',
     'https://instagram.com/dvin.av',
     'https://wa.me/989020092004'

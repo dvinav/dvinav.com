@@ -5,7 +5,6 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import PhoneRoundedIcon from '@mui/icons-material/PhoneRounded'
 import MailRoundedIcon from '@mui/icons-material/MailRounded'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import XIcon from '@mui/icons-material/X'
 
 const contactLinks = [
   {
@@ -21,7 +20,7 @@ const contactLinks = [
     icon: GitHubIcon
   },
   {
-    link: 'https://linkedin.com/in/dvin-avanesian-0b4565283',
+    link: 'https://linkedin.com/in/dvinav',
     icon: LinkedInIcon
   },
   {
@@ -33,13 +32,13 @@ const contactLinks = [
     icon: TelegramIcon
   },
   {
-    link: 'https://instagram.com/dvin.av',
+    link: 'https://instagram.com/dvinav',
     icon: InstagramIcon
-  },
+  } /* ,
   {
     link: 'https://x.com/dvin_av',
     icon: XIcon
-  }
+  } */
 ]
 
 export default contactLinks
